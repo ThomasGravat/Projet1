@@ -1,0 +1,698 @@
+@font-face
+{
+	font-family: 'Roboto-Black';
+	src: url(fonts/Roboto-Black.ttf);
+}
+h1
+{
+	font-family: 'Roboto-Black';
+}
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0px 0px 0px 0px;
+}
+/*-------------------------------------------Header-------------------------------------------*/
+/*------------------------------------------Menu principale-----------------------------------*/
+header
+{
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	background-color: white;
+	top: 0;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.9;
+}
+header img
+{
+	margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+nav ul
+{
+    list-style: none;
+    margin-right: 40px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+nav li
+{
+	padding: 33px 15px 0px 15px;
+	display: inline;
+}
+nav li:hover
+{
+	border-top: 2px solid rgb(78, 177, 213);
+	
+}
+nav a
+{
+	text-decoration: none;
+	color: rgb(119, 119, 119);
+}
+nav a:hover
+{
+	color: black;
+}
+/*--------------------------------------------------------------------Slider-------------------------------------*/
+.slider
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	top: 77px;
+}
+
+.slider-liste
+{
+	width: 500%;
+	margin-left: 0%;
+	position: relative;
+	-webkit-animation: 20s sliderleft infinite;
+}
+@-webkit-keyframes sliderleft
+{
+	0% {left: 0%}
+	25% {left: 0%}
+	50% {left: -100%}
+	75% {left: -100%}
+	100%{left: 0%}
+}
+.slider-liste img
+{
+	width: 20%;
+	float: left;
+}
+/*-----------------------------------------------Titre slider----------------------------------------------*/
+.titre-slider
+{
+	position: absolute;
+	color: white;
+	margin-top: 80px;
+    margin-left: 80px;
+}
+.titre-slider h1
+{
+	font-size: 2.5vw;
+}
+.titre-slider p
+{
+	margin-bottom: 35px;
+	font-size: 1.5vw;
+}
+span.title
+{
+	color: rgb(78, 177, 213);
+}
+/*------------------------------------------Bouton---------------------------------------*/
+.bouton
+{
+	border: 1px solid rgb(78, 177, 213);
+	background-color: rgb(78, 177, 213);
+	color: white;
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px black;
+	padding: 10px 10px 10px 10px;
+	margin-top: 10px; 
+	text-decoration: none;
+	font-size: 1.3vw;
+}
+/*------------------------------------------Timeline--------------------------------------*/
+.timeline 
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #5cadd3;
+    width: 100%;
+    animation: timeliner 10s infinite;
+    z-index: 1;
+}
+@keyframes timeliner 
+{
+  0% {width: 0px}
+  100%{width: 100%}
+}
+/*-------------------------------------Nos services---------------------------------------*/
+.titres-pages
+{
+	text-align: center;
+	margin-top: 175px;
+	margin-bottom: 0px;
+}
+.container-trait
+{
+	display: flex;
+	justify-content: center;
+}
+.trait
+{
+	width: 150px;
+    height: 1px;
+    background-color: #EBEBEB;
+    position: relative;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.rond
+{
+	color: #5cadd3;
+	position: absolute;
+	z-index: 2;
+	border: 6px solid white;
+	font-size: 15px;
+}
+.parag-entete
+{
+	text-align: center;
+	width: 600px;
+	margin: auto;
+}
+.corp-services
+{
+	display: flex;
+	margin-top: 50px;
+	margin-left: 50px;
+    margin-right: 50px;
+}
+/*-------------------------------------Description ux ui seo---------------------------------*/
+.description
+{
+	margin-top: 50px;
+    margin-left: 50px;
+}
+.UX
+{
+	margin: 10px;
+}
+span.logo-ux
+{
+	float: left;
+    width: 80px;
+    height: 108px;
+    display: block;
+    margin: 5px 15px 0px 15px;
+}
+span.logo-ux i
+{
+	color: rgb(78, 177, 213);
+}
+span.logo-ux i:first-child
+{
+	font-size: 40px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+}
+span.logo-ux i:last-child
+{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 27px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+/*---------------------------------------------Nos projets---------------------------------*/
+.nos-projets
+{
+	background-color: #f5f5f5;
+}
+.rond2
+{
+	color: #5cadd3;
+	position: absolute;
+	z-index: 2;
+	border: 6px solid #f5f5f5;
+	font-size: 15px
+}
+/*---------------------------------------------Menu portfolio--------------------------------*/
+.menu-portfolio
+{
+	display: flex;
+    justify-content: center;
+    margin: 40px 0px 40px 0px;
+}
+.menu-p
+{
+	display: inline;
+    padding: 10px 10px 10px 10px;
+    color: rgb(118, 121, 126);
+}
+.liste-menu
+{
+	background-color: rgb(229, 229, 229);
+    padding-top: 9px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+.menu-p:first-child
+{
+	border-radius: 5px 0px 0px 5px;
+}
+.menu-p:last-child
+{
+	border-radius: 0px 5px 5px 0px;
+}
+.menu-p:hover
+{
+	background-color: #5cadd3;
+    border-bottom: 5px solid #468cad;
+    color: white;
+}
+.menu-p label
+{
+	cursor: pointer;
+}
+.fa.fa-caret-down
+{     
+	position: relative;
+   	top: 26px;
+   	right: 30px;
+   	opacity: 0;
+   	color: #468cad;
+}
+.menu-p:hover .fa.fa-caret-down
+{
+   opacity: 1;
+}
+input[type=checkbox]
+{
+  display: none;
+}
+/*---------------------------------------Portfolio------------------------------*/
+#portfolio
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+figure
+{
+    height: 233px;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+}
+figure img
+{
+    width: 280px;
+}
+figcaption
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    visibility: hidden;
+    width: 280px;
+    top: 107px;
+    height: 80px;
+}
+figcaption h3, figcaption p
+{
+    margin-left: 15px;
+    
+}
+figure:hover figcaption
+{
+    visibility: visible;
+}
+figcaption h3
+{
+	margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+figcaption p
+{
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*----------------------------------------------oeil------------------------------------------------------*/
+.eye
+{ 
+    height: 30px;
+    width: 30px;
+    background-color: rgb(78, 177, 213);
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 10px;
+}
+.fa.fa-eye
+
+{
+    position: relative;
+    top: 5px;
+    left: 7px;
+}
+/*-------------------------------------------------Nous contacter--------------------------------------*/
+iframe
+{
+    width: 100%;
+    height: 500px;
+    opacity: 0.6;
+}
+.map
+{
+    z-index: 1;
+    background-color: rgb(78, 177, 213);
+    height: 500px;
+    margin-top: 40px;
+}
+/*---------------------------------------------------Formulaire--------------------------------------------------*/
+.nous-contacter{
+    padding: 30px 0px 5px 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.formulaire{
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 15px 15px 15px 15px;
+    top: 45%;
+    left: 65%;
+    position: absolute;
+}
+
+input[type="submit"]
+{
+    background-color: rgb(78, 177, 213);
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+}
+input
+{
+	width: 100%;
+}
+textarea
+{
+    width: 100%;
+}
+/*-------------------------------------Responsive-----------------------------------*/
+@media screen and (min-width: 761px) and (max-width: 1080px)
+{
+	/*-----------------------Nos services------------------------*/
+	.corp-services
+	{
+		display: initial;
+	}
+	.image-ordi
+	{
+		text-align: center;
+	}
+	.description
+	{
+		margin-left: initial;
+	}
+	.UX
+	{
+		width: 600px;
+    	margin: auto;
+	}
+	span.logo-ux
+	{
+		height: 80px;
+	}
+}
+@media screen and (min-width: 680px) and (max-width: 760px)
+{
+	/*---------------------Menu navigation---------*/
+	header
+	{
+	    text-align: center;
+	    display: initial;
+	}
+	header img
+	{
+		width: 150px;
+	}
+	nav ul
+	{
+		margin-top: 0px;
+	}
+	nav li
+	{
+		padding: 5px 10px 0px 10px;
+	}
+	/*------------------------------Slider-----------------------*/
+	.slider
+	{
+		top: 85px;
+	}
+	/*-----------------------Nos services------------------------*/
+	.corp-services
+	{
+		display: initial;
+	}
+	.image-ordi
+	{
+		text-align: center;
+	}
+	.description
+	{
+		margin-left: initial;
+	}
+	.UX
+	{
+		width: 600px;
+    	margin: auto;
+	}
+	span.logo-ux
+	{
+		height: 80px;
+	}
+	/*---------------------------Nos projets----------------------------*/
+	.liste-menu
+	{
+		display: flex;
+	    flex-direction: column;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	}
+	.menu-p
+	{
+		border-radius: 5px;
+	}
+	.menu-p:first-child
+	{
+		border-radius: 5px;
+	}
+	.menu-p:last-child
+	{
+		border-radius: 5px;
+	}
+}
+@media screen and (min-width: 626px) and (max-width: 679px)
+/*---------------------Menu navigation---------*/
+{
+	header
+	{
+	    text-align: center;
+	    display: initial;
+	}
+	header img
+	{
+		width: 150px;
+	}
+	nav ul
+	{
+		margin-top: 0px;
+	}
+	nav li
+	{
+		padding: 5px 10px 0px 10px;
+	}
+
+	/*---------------------Slider------------------*/
+	.slider
+	{
+		height: 250px;
+		text-align: center;
+		margin-top: 30px;
+	}
+	.slider-liste
+	{
+		display: none;
+	}
+	.titre-slider
+	{
+		position: initial;
+		color: black;
+		margin-left: 0px;
+    	margin-top: 30px;
+	}
+	.titre-slider h1
+	{
+		font-size: 1.5em;
+	}
+	.titre-slider p, .bouton
+	{
+		font-size: 1em;
+	}
+	
+	.timeline
+	{
+		display: none;
+	}
+	/*-----------------------Nos services------------------------*/
+	.corp-services
+	{
+		display: initial;
+	}
+	.image-ordi
+	{
+		text-align: center;
+	}
+	.description
+	{
+		margin-left: initial;
+	}
+	.UX
+	{
+		width: 600px;
+    	margin: auto;
+	}
+	span.logo-ux
+	{
+		height: 80px;
+	}
+	.formulaire
+	{
+		position: initial;
+		text-align: center;
+    	width: 300px;
+    	margin: auto;
+	}
+	.liste-menu
+	{
+		display: flex;
+	    flex-direction: column;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	}
+	.menu-p
+	{
+		border-radius: 5px;
+	}
+	.menu-p:first-child
+	{
+		border-radius: 5px;
+	}
+	.menu-p:last-child
+	{
+		border-radius: 5px;
+	}
+}
+
+@media screen and (max-width: 625px)
+{
+	/*---------------------Menu navigation---------*/
+	header
+	{
+	    text-align: center;
+	    display: initial;
+	}
+	header img
+	{
+		width: 150px;
+	}
+	nav ul
+	{
+		margin-top: 0px;
+	}
+	nav li
+	{
+		padding: 5px 10px 0px 10px;
+	}
+
+	/*---------------------Slider------------------*/
+	.slider
+	{
+		height: 250px;
+		text-align: center;
+		margin-top: 30px;
+	}
+	.slider-liste
+	{
+		display: none;
+	}
+	.titre-slider
+	{
+		position: initial;
+		color: black;
+		margin-left: 0px;
+    	margin-top: 30px;
+	}
+	.titre-slider h1
+	{
+		font-size: 1.5em;
+	}
+	.titre-slider p, .bouton
+	{
+		font-size: 1em;
+	}
+	
+	.timeline
+	{
+		display: none;
+	}
+	/*-----------------------Nos services------------------------*/
+	.corp-services
+	{
+		display: initial;
+	}
+	.image-ordi
+	{
+		text-align: center;
+	}
+	.description
+	{
+		margin-left: initial;
+	}
+	.UX
+	{
+		max-width: 600px;
+    	margin: auto;
+    	text-align: center;
+	}
+	span.logo-ux
+	{
+		display: none;
+	}
+	.formulaire
+	{
+		position: initial;
+		text-align: center;
+    	width: 300px;
+    	margin: auto;
+	}
+	.liste-menu
+	{
+		display: flex;
+	    flex-direction: column;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	}
+	.menu-p
+	{
+		border-radius: 5px;
+	}
+	.menu-p:first-child
+	{
+		border-radius: 5px;
+	}
+	.menu-p:last-child
+	{
+		border-radius: 5px;
+	}
+}
